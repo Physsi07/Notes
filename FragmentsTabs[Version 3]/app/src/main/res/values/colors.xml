@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#f2e60c</color>
+    <color name="colorPrimaryDark">#bca82b</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorForTabs">#fff659</color>
+    <color name="colorForTabIndicator">#000</color>
+    <color name="fabColor">#bca82b</color>
+
+    <color name="Red">#e50000</color>
+    <color name="Red2">#f27f7f</color>
+
+    <color name="Green">#00CF00</color>
+    <color name="Green2">#8DEA85</color>
+
+    <color name="Purple">#7f7ff2</color>
+    <color name="Purple2">#bfbff8</color>
+</resources>
