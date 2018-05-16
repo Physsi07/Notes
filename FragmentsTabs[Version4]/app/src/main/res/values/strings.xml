@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">FragmentsTabs</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="plus">plusButton</string>
+    <string name="trash">trashButton</string>
+
+    <!--GOOGLE MAPS API KEY -->
+    <!--<string name="GOOGLE_MAPS_API_KEY">AIzaSyDkvMKExTuz-Zwc_i8Z-rZzce5izGckjcU</string>-->
+    <string name="GOOGLE_MAPS_API_KEY">AIzaSyDZr5nxv7Fm6sYocEZNI-mV4NncwisqIQw</string>
+
+    <!-- STRING VALUES FOR THE FONT SIZE -->
+    <string-array name="Colors_For_SideBar">
+        <item>Colors</item>
+        <item>Default</item>
+        <item>Red</item>
+        <item>Green</item>
+        <item>Purple</item>
+    </string-array>
+    <string name="title_activity_maps2">Map</string>
+    <string name="galleryText">Gallery</string>
+
+</resources>
