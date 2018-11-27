@@ -35,14 +35,12 @@ public class DBHelper extends SQLiteOpenHelper {
     private Context context;
 
     public DBHelper(Context context) {
-
         super(context, DB_Name, null, DB_Ver);
         Log.d(TAG, "CONSTRUCTOR OF THE DATABASE CREATED");
     }
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-
         // EXECUTING THE QUERY FOR MY SQL TABLE //
         String createTablePersonal = String.format("CREATE TABLE " + DB_TablePersonal + " ( " +
                                                    " ID INTEGER PRIMARY KEY AUTOINCREMENT, " +
@@ -62,7 +60,6 @@ public class DBHelper extends SQLiteOpenHelper {
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-
         db.execSQL("DROP TABLE IF EXISTS " + DB_TablePersonal);
         db.execSQL("DROP TABLE IF EXISTS " + DB_TableBusiness);
         db.execSQL("DROP TABLE IF EXISTS " + DB_ColForGallery);

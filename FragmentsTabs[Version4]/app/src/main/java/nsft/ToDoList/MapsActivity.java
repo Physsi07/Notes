@@ -17,6 +17,8 @@ import android.view.WindowManager;
 import android.view.inputmethod.EditorInfo;
 import android.widget.*;
 import com.google.android.gms.location.*;
+import com.google.android.gms.location.places.GeoDataClient;
+import com.google.android.gms.location.places.Places;
 import com.google.android.gms.maps.*;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
@@ -56,6 +58,10 @@ public class MapsActivity extends AppCompatActivity
         mGPS = findViewById(R.id.ic_gps);
 
         getLocationPermission();
+
+
+        // trying to use the google places in here
+//        GeoDataClient geoDataClient = Places.getGeoDataClient(this, null);
     }
 
     // INIT METHOD //;

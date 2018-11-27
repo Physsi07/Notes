@@ -44,14 +44,13 @@ public class Gallery extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_gallery);
-
         init();
     }
 
     public void init() {
 
         // IMAGE //
-//        image = findViewById(R.id.image1);
+        image = findViewById(R.id.image1);
 
         // FAB FOR CAMERA //
         fab1 = findViewById(R.id.fabForCamera);
@@ -75,6 +74,8 @@ public class Gallery extends AppCompatActivity {
                 list.setAdapter(mAdapter);
 
                 Toast.makeText(Gallery.this, "Camera Open", Toast.LENGTH_SHORT).show();
+
+                Log.d(TAG, "init: Camera is loading because the fab button was clicked");
 
                 Snackbar.make(view, "Camera Loading", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
@@ -103,6 +104,9 @@ public class Gallery extends AppCompatActivity {
             Log.d(TAG, "onActivityResult: BITMAP IS NULL");
         }
         else {
+
+            // IF THE BITMAP IS NOT NULL THAT MEANS WE ARE GETTING A PICTURE FROM THE CAMERA
+            // AND AT LEAST LETS DISPLAY IT ON THE SCREEN
             Log.d(TAG, "onActivityResult: BITMAP IS NOT NULL");
 //            image.setImageBitmap(bitmap);
         }
@@ -122,8 +126,10 @@ public class Gallery extends AppCompatActivity {
         notification.setContentIntent(pendingIntent);
 
         // BUILDS NOTIFICATION AND SENDING IT TO THE DEVICE //
-        NotificationManager nm = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
-        nm.notify(uniqueID, notification.build()); //BUILDING THE NOTIFICATION AND SENDING IT OUT TO THE SYSTEM //
+        NotificationManager notificationManager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
+
+        //BUILDING THE NOTIFICATION AND SENDING IT OUT TO THE SYSTEM //
+        notificationManager.notify(uniqueID, notification.build());
 
     }
 

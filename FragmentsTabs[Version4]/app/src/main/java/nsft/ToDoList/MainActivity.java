@@ -57,15 +57,6 @@ import petrov.kristiyan.colorpicker.ColorPicker;
 
 import static nsft.ToDoList.R.array.Colors_For_SideBar;
 
-// TO DO //
-// USER NOTIFICATION
-// SETTING AND
-// USER PREFERENCES
-// NOTIFIES ME WHEN I GET TO A SPECIFIC ADDRESS
-// CHAPTER 9
-// SETTINGS FOR THE USER CONTROL
-// CREATE AN ALERT DIALOG SAYING "ARE YOU SURE YOU WANT TO DELETE"
-
 public class MainActivity extends AppCompatActivity implements Tab1.OnFragmentInteractionListener,
         Tab2.OnFragmentInteractionListener {
 
